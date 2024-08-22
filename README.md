@@ -1,7 +1,5 @@
 # React Shopping List
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
-
 ## Description
 
 Duration: 3 Week Sprint
@@ -21,7 +19,9 @@ We have created a shopping list application that stores items in a database that
 
 # Screen Shot
 
-![alt text](image.png)
+![alt text](image.png) 
+
+![alt text](image-1.png)
 
 ## Prerequisites
 
