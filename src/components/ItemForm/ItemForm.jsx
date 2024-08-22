@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 function ItemForm(props) {
@@ -54,37 +56,40 @@ function ItemForm(props) {
     return (
         <>
             <h2>Add a new Item</h2>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name
-                </label>
-                <input
-                    type="text"
-                    placeholder="Name"
+            <Box
+                component="form"
+                onSubmit={handleSubmit}  // Connect handleSubmit to form
+                sx={{
+                    '& > :not(style)': { m: 1, width: '25ch' },
+                }}
+                noValidate
+                autoComplete="off"
+            >
+                <TextField
+                    label="Item Name"
+                    color="secondary"
+                    focused
                     value={newItemName}
                     onChange={(evt) => setNewItemName(evt.target.value)}
-
                 />
-                <label>
-                    Qty
-                </label>
-                <input
+                <TextField
+                    label="Quantity"
+                    variant="filled"
+                    color="success"
+                    focused
                     type="number"
-                    placeholder="qty"
                     value={newItemQuantity}
                     onChange={(evt) => setNewItemQuantity(evt.target.value)}
-
                 />
-                <label>
-                    Unit
-                </label>
-                <input
-                    type="text"
-                    placeholder="unit"
+                <TextField
+                    label="Unit"
+                    variant="standard"
+                    color="warning"
+                    focused
                     value={newItemUnit}
                     onChange={(evt) => setNewItemUnit(evt.target.value)}
-
                 />
+ </Box>
 
                 <Button type="submit">Add Item</Button>
             </form>

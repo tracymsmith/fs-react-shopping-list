@@ -1,7 +1,7 @@
 CREATE TABLE "shopping" (
 	"id" SERIAL PRIMARY KEY,
 	"name" varchar(80),
-	"quantity" number (10),
+	"quantity" integer,
 	"unit" varchar(80)
 );
 
