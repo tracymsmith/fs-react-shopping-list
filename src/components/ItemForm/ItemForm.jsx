@@ -92,7 +92,7 @@ function ItemForm(props) {
  </Box>
 
                 <Button type="submit">Add Item</Button>
-            </form>
+            
         </>
     );
 }
