@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Button from '@mui/material/Button';
 
 function ItemForm(props) {
 
@@ -85,7 +86,7 @@ function ItemForm(props) {
 
                 />
 
-                <button type="submit">Add Item</button>
+                <Button type="submit">Add Item</Button>
             </form>
         </>
     );

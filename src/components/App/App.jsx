@@ -6,6 +6,7 @@ import Header from '../Header/Header.jsx'
 import ItemToBuy from '../Item/Item'
 import ItemList from '../ItemList/ItemList'
 import ItemForm from '../ItemForm/ItemForm'
+import OutlineButtons from '../OutlineButtons/OutlineButtons'
 import './App.css';
 
 
@@ -86,6 +87,7 @@ function App() {
       </main>
       <ItemForm getItems={fetchShoppingList} />
       <ItemList tomato={shoppingList} />
+  
       <div>Better Place</div>
 
 
