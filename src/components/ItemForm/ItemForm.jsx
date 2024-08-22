@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 function ItemForm(props) {
 
     const getItems = props.getItems;
@@ -87,8 +89,10 @@ function ItemForm(props) {
                     value={newItemUnit}
                     onChange={(evt) => setNewItemUnit(evt.target.value)}
                 />
-                <button type="submit">Add Item</button>
-            </Box>
+ </Box>
+
+                <Button type="submit">Add Item</Button>
+            </form>
         </>
     );
 }
